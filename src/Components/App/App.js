@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import fetchCalls from '../../ApiCalls';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      allBirds: []
+    }
+  }
+
+componentDidMount = () => {
+  fetchCalls.fetchData('allBirds')
+    .then((data) => this.setState({allBirds: data}))
 }
+
+  render() {
+    return (
+      <main className='App'>
+        <h1>Welcome to Fowl Prowl</h1>
+      </main>
+    )
+  }
+}
+
 
 export default App;
