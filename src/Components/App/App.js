@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import fetchCalls from '../../ApiCalls';
+import AllBirds from '../AllBirds/AllBirds';
 
 class App extends Component {
   constructor() {
@@ -19,6 +20,7 @@ componentDidMount = () => {
     return (
       <main className='App'>
         <h1>Welcome to Fowl Prowl</h1>
+        <AllBirds allBirds={this.state.allBirds}/>
       </main>
     )
   }
