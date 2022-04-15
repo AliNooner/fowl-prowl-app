@@ -1,6 +1,7 @@
-.card,
-p {
-	background-color: #f7ede2;
+
+
+.card, .style {
+		background-color: #f7ede2;
 }
 
 .card {
@@ -21,4 +22,9 @@ p {
 	display: flex;
 	padding: 0.2em;
 	flex-direction: column;
+}
+
+.learn-btn-card {
+	margin-left: 22vw;
+	padding-top: 1vw;
 }

@@ -9,9 +9,13 @@
 	/* background: linear-gradient(90deg, rgba(5,2,56,1) 0%, rgba(136,0,255,1) 49%, rgba(24,9,121,1) 78%); */
 	/* box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0); */
 }
-.nav-title {
+.title-div {
 	background-color: #454545;
 	color: #f9f5f0;
+}
+
+.title {
+	font-size: 45px;
 }
 
 .nav-buttons {
@@ -36,6 +40,7 @@
 	width: 8em;
 	font-weight: bolder;
 	transition: 500ms;
+	background-color: #f7ede2;
 }
 
 .learn-link:hover,

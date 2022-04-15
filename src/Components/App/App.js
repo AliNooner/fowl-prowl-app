@@ -4,6 +4,8 @@ import './App.css'
 import fetchCalls from '../../ApiCalls'
 import AllBirds from '../AllBirds/AllBirds'
 import Nav from '../Nav/Nav'
+import Botd from '../Botd/Botd'
+import Learn from '../Learn/Learn'
 
 class App extends Component {
 	constructor() {
@@ -23,11 +25,25 @@ class App extends Component {
 		return (
 			<main className='App'>
 				<Nav />
-				<h1 className='title'>Fowl Prowl</h1>
-				<h4>A Modern Birding App</h4>
 				<Route
-					path='/'
+				 exact path='/'
+					render={() => <Botd />}
+				/>
+				<Route
+					 exact path='/'
 					render={() => <AllBirds allBirds={this.state.allBirds} />}
+				/>
+				<Route
+					exact path='/learn'
+					render={() => <Learn allBirds={this.state.allBirds} />}
+				/>
+				<Route
+					path='/learn/:id'
+					render={() => <div>Learn about single bird </div>}
+				/>
+				<Route
+					path='/add-sighting'
+					render={() => <div>Add bird sighting </div>}
 				/>
 			</main>
 		)

@@ -5,7 +5,10 @@ import { Route, NavLink } from 'react-router-dom'
 const Nav = () => {
 	return (
 		<nav className='navigation'>
-			<h1 className='nav-title'>Welcome</h1>
+				<div className='title-div'>
+					<h1 className='title'>Fowl Prowl</h1>
+					<h4>A Modern Birding App</h4>
+				</div>
 			<div className='nav-buttons'>
 				<NavLink to='/'>
 					<p className='home-link'>Home</p>
@@ -13,7 +16,7 @@ const Nav = () => {
 				<NavLink to='/learn'>
 					<p className='learn-link'>Learn</p>
 				</NavLink>
-				<NavLink to='/addBird'>
+				<NavLink to='/add-sighting'>
 					<p className='addBird-link'>Add Sighting</p>
 				</NavLink>
 			</div>
