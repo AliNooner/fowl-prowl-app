@@ -10,7 +10,7 @@ const Card = ({ commonName, scientificName, img, id }) => {
 				<p className='style sci-name'>{scientificName}</p>
 			</div>
 			<img src={img} alt={commonName} height='200px' />
-			<NavLink to='/learn/:id'>
+			<NavLink to={`/learn/${id}`}>
 				<p className='learn-btn-card'>Learn more</p>
 			</NavLink>
 		</div>

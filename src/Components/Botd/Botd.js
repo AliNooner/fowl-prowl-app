@@ -3,16 +3,17 @@ import './Botd.css';
 import { Route, NavLink } from 'react-router-dom'
 
 
-const Botd = () => {
+const Botd = ({randomBird}) => {
+
   return(
     <div className= 'botd'  style={{
-      backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Fire-capped_Tit._AMSM0952.jpg/800px-Fire-capped_Tit._AMSM0952.jpg")`
+      backgroundImage: `url(${randomBird.img_url})`
     }}>
     <div className= 'name-div'>
-      <p className= 'common-name-botd'>Common name Here</p>
-      <p className= 'scientific-name-botd'>Scientific Name</p>
+      <p className= 'common-name-botd'>{randomBird.common_name}</p>
+      <p className= 'scientific-name-botd'>{randomBird.scientific_name}</p>
     </div>
-    <NavLink to='/learn/:id'>
+    <NavLink to={`/learn/${randomBird.id}`}>
       <button className="learn-btn">Learn More</button>
     </NavLink>
     </div>

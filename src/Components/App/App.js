@@ -6,12 +6,14 @@ import AllBirds from '../AllBirds/AllBirds'
 import Nav from '../Nav/Nav'
 import Botd from '../Botd/Botd'
 import Learn from '../Learn/Learn'
+import Bird from '../Bird/Bird'
 
 class App extends Component {
 	constructor() {
 		super()
 		this.state = {
 			allBirds: [],
+			botd: {}
 		}
 	}
 
@@ -19,7 +21,14 @@ class App extends Component {
 		fetchCalls
 			.fetchData('allBirds')
 			.then((data) => this.setState({ allBirds: data }))
+			.then(() => this.getRandomBird(this.state.allBirds))
 	}
+
+	getRandomBird = (array) => {
+  const index = Math.floor(Math.random() * array.length)
+	this.setState({botd:this.state.allBirds[index]})
+	}
+
 
 	render() {
 		return (
@@ -27,7 +36,7 @@ class App extends Component {
 				<Nav />
 				<Route
 				 exact path='/'
-					render={() => <Botd />}
+					render={() => <Botd randomBird={this.state.botd}/>}
 				/>
 				<Route
 					 exact path='/'
@@ -39,7 +48,7 @@ class App extends Component {
 				/>
 				<Route
 					path='/learn/:id'
-					render={() => <div>Learn about single bird </div>}
+					render={({match}) => <Bird id={match.params.id}/>}
 				/>
 				<Route
 					path='/add-sighting'
