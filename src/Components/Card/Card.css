@@ -25,6 +25,15 @@
 }
 
 .learn-btn-card {
-	margin-left: 22vw;
+	/* margin-left: 22vw; */
 	padding-top: 1vw;
+}
+
+#icon {
+	height: 3vw;
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-between;
 }

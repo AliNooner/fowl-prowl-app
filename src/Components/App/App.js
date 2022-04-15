@@ -13,7 +13,8 @@ class App extends Component {
 		super()
 		this.state = {
 			allBirds: [],
-			botd: {}
+			botd: {},
+			lifers: []
 		}
 	}
 
