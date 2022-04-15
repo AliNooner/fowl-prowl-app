@@ -1,0 +1,24 @@
+.card,
+p {
+	background-color: #f7ede2;
+}
+
+.card {
+	border: solid 1em #f7ede2;
+	border-radius: 0.5em;
+	padding: 1em;
+	/* box-shadow: 2.7px 5.4px 5.4px hsl(0deg 0% 0% / 0.42); */
+}
+
+.common-name {
+	font-weight: bolder;
+}
+.sci-name {
+	font-style: italic;
+	color: #7c7c7c;
+}
+.name-container {
+	display: flex;
+	padding: 0.2em;
+	flex-direction: column;
+}

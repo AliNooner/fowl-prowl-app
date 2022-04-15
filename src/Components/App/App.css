@@ -1,0 +1,18 @@
+.App {
+	background-color: #f9f5f0;
+	text-align: center;
+	color: #454545;
+}
+
+a:link {
+	color: #454545;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #454545;
+}
+
+h4 {
+	color: #7c7c7c;
+}
