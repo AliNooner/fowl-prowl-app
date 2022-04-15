@@ -5,7 +5,7 @@ import colorBird from '../../images/bird_color.png'
 import birdOutline from '../../images/bird_outline.png'
 
 
-const Card = ({ commonName, scientificName, img, id }) => {
+const Card = ({ commonName, scientificName, img, id, addLifer }) => {
 	return (
 		<div className='card'>
 			<div className='name-container'>
