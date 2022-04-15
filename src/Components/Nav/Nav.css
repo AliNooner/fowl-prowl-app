@@ -36,6 +36,7 @@
 	width: 8em;
 	font-weight: bolder;
 	transition: 500ms;
+	background-color: #f7ede2;
 }
 
 .learn-link:hover,

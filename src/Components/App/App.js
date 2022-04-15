@@ -27,12 +27,24 @@ class App extends Component {
 				<h1 className='title'>Fowl Prowl</h1>
 				<h4>A Modern Birding App</h4>
 				<Route
-					path='/'
+				 exact path='/'
 					render={() => <Botd />}
 				/>
 				<Route
-					path='/'
+					 exact path='/'
 					render={() => <AllBirds allBirds={this.state.allBirds} />}
+				/>
+				<Route
+					exact path='/learn'
+					render={() => <AllBirds allBirds={this.state.allBirds} />}
+				/>
+				<Route
+					path='/learn/:id'
+					render={() => <div>Learn about single bird </div>}
+				/>
+				<Route
+					path='/add-sighting'
+					render={() => <div>Add bird sighting </div>}
 				/>
 			</main>
 		)
