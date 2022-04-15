@@ -5,8 +5,6 @@ import { Route, NavLink } from 'react-router-dom'
 
 const Botd = ({randomBird}) => {
 
-// const birdOfDay = this.props.randomBird(this.props.allBirds)
-
   return(
     <div className= 'botd'  style={{
       backgroundImage: `url(${randomBird.img_url})`
@@ -15,7 +13,7 @@ const Botd = ({randomBird}) => {
       <p className= 'common-name-botd'>{randomBird.common_name}</p>
       <p className= 'scientific-name-botd'>{randomBird.scientific_name}</p>
     </div>
-    <NavLink to='/learn/:id'>
+    <NavLink to={`/learn/${randomBird.id}`}>
       <button className="learn-btn">Learn More</button>
     </NavLink>
     </div>
