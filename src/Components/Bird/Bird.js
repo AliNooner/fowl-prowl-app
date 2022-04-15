@@ -19,11 +19,11 @@ componentDidMount = () => {
   }
 
   render() {
-    console.log(this.state.singleBird)
     return(
       <div>
         <p>{this.state.birdID}</p>
         <p>{this.state.singleBird.common_name}</p>
+        <img src={this.state.singleBird.img_url} alt="Bird photo" width="500px" height="auto" position="fixed"/>
         <p>{this.state.singleBird.description}</p>
       </div>
     )
