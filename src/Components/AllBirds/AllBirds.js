@@ -15,7 +15,7 @@ const AllBirds = ({allBirds}) => {
     )
   })
 
-  return <div className='allBirds-container'>ALLBIRDS</div>
+  return <div className='allBirds-container'>{birdCards}</div>
 }
 
 

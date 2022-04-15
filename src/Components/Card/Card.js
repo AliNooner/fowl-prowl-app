@@ -6,7 +6,7 @@ const Card = ({commonName, scientificName, img, id}) => {
     <div className='card'>
       <p>{commonName}</p>
       <p>{scientificName}</p>
-      <img src={img} alt={commonName}/>
+      <img src={img} alt={commonName} height='200px'/>
     </div>
   )
 }
