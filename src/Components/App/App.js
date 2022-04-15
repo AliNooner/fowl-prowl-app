@@ -24,8 +24,6 @@ class App extends Component {
 		return (
 			<main className='App'>
 				<Nav />
-				<h1 className='title'>Fowl Prowl</h1>
-				<h4>A Modern Birding App</h4>
 				<Route
 				 exact path='/'
 					render={() => <Botd />}
