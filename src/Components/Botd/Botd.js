@@ -8,8 +8,8 @@ const Botd = () => {
       backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Fire-capped_Tit._AMSM0952.jpg/800px-Fire-capped_Tit._AMSM0952.jpg")`
     }}>
     <div className= 'name-div'>
-      <p>Common name Here</p>
-      <p>Scientific Name</p>
+      <p className= 'common-name-botd'>Common name Here</p>
+      <p className= 'scientific-name-botd'>Scientific Name</p>
     </div>
     <button className="learn-btn">Learn More</button>
     </div>

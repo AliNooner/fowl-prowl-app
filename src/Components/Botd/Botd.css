@@ -2,8 +2,33 @@
   height: 50vw;
   background-repeat: no-repeat;
   background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .name-div {
   background-color: none;
+  background-color: #45454555;
+  color:white;
+  text-align: left;
+  padding: 20px;
+}
+
+.common-name-botd {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.scientific-name-botd {
+  font-style: italic;
+}
+
+.learn-btn {
+  background-color: #45454555;
+  width: 20vw;
+  height: 5vw;
+  border-radius: 10px;
+  border: solid #45454555;
+
 }
