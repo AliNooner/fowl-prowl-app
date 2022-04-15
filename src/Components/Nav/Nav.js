@@ -13,7 +13,7 @@ const Nav = () => {
 				<NavLink to='/learn'>
 					<p className='learn-link'>Learn</p>
 				</NavLink>
-				<NavLink to='/addBird'>
+				<NavLink to='/add-sighting'>
 					<p className='addBird-link'>Add Sighting</p>
 				</NavLink>
 			</div>

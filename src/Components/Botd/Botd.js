@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import './Botd.css';
+import { Route, NavLink } from 'react-router-dom'
 
 
 const Botd = () => {
@@ -11,7 +12,9 @@ const Botd = () => {
       <p className= 'common-name-botd'>Common name Here</p>
       <p className= 'scientific-name-botd'>Scientific Name</p>
     </div>
-    <button className="learn-btn">Learn More</button>
+    <NavLink to='/learn/:id'>
+      <button className="learn-btn">Learn More</button>
+    </NavLink>
     </div>
   )
 }

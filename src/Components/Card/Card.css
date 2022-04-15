@@ -23,3 +23,8 @@
 	padding: 0.2em;
 	flex-direction: column;
 }
+
+.learn-btn-card {
+	margin-left: 22vw;
+	padding-top: 1vw;
+}
