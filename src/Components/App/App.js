@@ -6,6 +6,7 @@ import AllBirds from '../AllBirds/AllBirds'
 import Nav from '../Nav/Nav'
 import Botd from '../Botd/Botd'
 import Learn from '../Learn/Learn'
+import Bird from '../Bird/Bird'
 
 class App extends Component {
 	constructor() {
@@ -39,7 +40,7 @@ class App extends Component {
 				/>
 				<Route
 					path='/learn/:id'
-					render={() => <div>Learn about single bird </div>}
+					render={({match}) => <Bird id={match.params.id}/>}
 				/>
 				<Route
 					path='/add-sighting'
