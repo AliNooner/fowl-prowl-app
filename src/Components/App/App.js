@@ -5,6 +5,7 @@ import fetchCalls from '../../ApiCalls'
 import AllBirds from '../AllBirds/AllBirds'
 import Nav from '../Nav/Nav'
 import Botd from '../Botd/Botd'
+import Learn from '../Learn/Learn'
 
 class App extends Component {
 	constructor() {
@@ -34,7 +35,7 @@ class App extends Component {
 				/>
 				<Route
 					exact path='/learn'
-					render={() => <AllBirds allBirds={this.state.allBirds} />}
+					render={() => <Learn allBirds={this.state.allBirds} />}
 				/>
 				<Route
 					path='/learn/:id'
