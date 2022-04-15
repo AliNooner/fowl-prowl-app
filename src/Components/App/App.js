@@ -13,6 +13,7 @@ class App extends Component {
 		super()
 		this.state = {
 			allBirds: [],
+			botd: {}
 		}
 	}
 
@@ -20,7 +21,14 @@ class App extends Component {
 		fetchCalls
 			.fetchData('allBirds')
 			.then((data) => this.setState({ allBirds: data }))
+			.then(() => this.getRandomBird(this.state.allBirds))
 	}
+
+	getRandomBird = (array) => {
+  const index = Math.floor(Math.random() * array.length)
+	this.setState({botd:this.state.allBirds[index]})
+	}
+
 
 	render() {
 		return (
@@ -28,7 +36,7 @@ class App extends Component {
 				<Nav />
 				<Route
 				 exact path='/'
-					render={() => <Botd />}
+					render={() => <Botd randomBird={this.state.botd}/>}
 				/>
 				<Route
 					 exact path='/'
