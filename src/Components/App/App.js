@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, NavLink } from 'react-router-dom';
+import { Route, NavLink, Switch } from 'react-router-dom';
 import './App.css';
 import fetchCalls from '../../ApiCalls';
 import AllBirds from '../AllBirds/AllBirds';
@@ -23,7 +23,7 @@ componentDidMount = () => {
       <main className='App'>
         <Nav />
         <h1>Welcome to Fowl Prowl</h1>
-        <AllBirds allBirds={this.state.allBirds}/>
+        <Route path="/" render={() => <AllBirds allBirds={this.state.allBirds}/>}/>
       </main>
     )
   }
