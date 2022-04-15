@@ -30,5 +30,15 @@
   height: 5vw;
   border-radius: 10px;
   border: solid #45454555;
+  margin-left: 76.5vw;
+  margin-bottom: 1vw;
+  transition: 500ms;
+  color: white;
+}
 
+.learn-btn:hover {
+  width: 22vw;
+  height: 6vw;
+  transition: 1000ms;
+  cursor: pointer;
 }
