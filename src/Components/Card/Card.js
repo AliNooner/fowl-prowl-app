@@ -34,9 +34,10 @@ class Card extends Component {
 	changeIcon = (id) => {
 		if (!this.state.isFavorited){
 			this.setState({isFavorited: true})
-			this.props.addLifer('Lifer added')
+			this.props.addLifer(this.props.birdObject)
 		} else if (this.state.isFavorited){
 			this.setState({isFavorited: false})
+			this.props.removeLifer(this.props.birdObject.id)
 		}
 	}
 	render() {

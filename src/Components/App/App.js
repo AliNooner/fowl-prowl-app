@@ -32,6 +32,13 @@ class App extends Component {
 
 	addLifer = (newBird) => {
 		this.setState({lifers: [...this.state.lifers, newBird]})
+		console.log('AFTER ADDING', this.state.lifers)
+	}
+
+	removeLifer = (id) => {
+		const filteredBirds = this.state.lifers.filter(bird => bird.id != id)
+		this.setState({lifers: filteredBirds})
+		console.log('AFTER REMOVE', this.state.lifers)
 	}
 
 
@@ -45,7 +52,7 @@ class App extends Component {
 				/>
 				<Route
 					 exact path='/'
-					render={() => <AllBirds allBirds={this.state.allBirds} addLifer={this.addLifer}/>}
+					render={() => <AllBirds allBirds={this.state.allBirds} addLifer={this.addLifer} removeLifer={this.removeLifer}/>}
 				/>
 				<Route
 					exact path='/learn'
