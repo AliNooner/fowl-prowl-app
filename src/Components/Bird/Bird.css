@@ -5,6 +5,7 @@
 }
 
 .name-img-container {
+	padding: 2em;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -13,9 +14,28 @@
 .bird-sci-name {
 	font-style: italic;
 }
+.bird-name {
+	font-weight: bolder;
+	font-size: 2em;
+}
+.single-name-container {
+	border: solid #7c7c7c 0.05em;
+	padding: 3em;
+	border-radius: 1em;
+}
+.intro {
+	border: solid #7c7c7c 0.05em;
+	padding: 0.2em;
+	border-radius: 1em;
+	font-weight: bolder;
+}
 
 .description {
 	padding: 2em;
 	font-size: 2em;
 	font-weight: lighter;
+}
+
+#birdImg {
+	border-radius: 1em;
 }

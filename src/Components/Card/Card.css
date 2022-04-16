@@ -1,7 +1,6 @@
-
-
-.card, .style {
-		background-color: #f7ede2;
+.card,
+.style {
+	background-color: #f7ede2;
 }
 
 .card {
@@ -25,8 +24,11 @@
 }
 
 .learn-btn-card {
-	/* margin-left: 22vw; */
 	padding-top: 1vw;
+}
+
+.learn-btn-card:hover {
+	color: #cc7178;
 }
 
 #icon {
