@@ -24,22 +24,36 @@ import birdOutline from '../../images/bird_outline.png'
 // }
 
 class Card extends Component {
-	constructor(props) {
+	constructor(props) { //this.props.birdObject
 		super(props)
 		this.state = {
 			isFavorited: false
 		}
 	}
 
-	changeIcon = (id) => {
-		if (!this.state.isFavorited){
-			this.setState({isFavorited: true})
-			this.props.addLifer(this.props.birdObject)
-		} else if (this.state.isFavorited){
-			this.setState({isFavorited: false})
-			this.props.removeLifer(this.props.birdObject.id)
-		}
-	}
+	// changeIcon = (id) => {
+	// 	if (!this.state.isFavorited){
+	// 		this.setState({isFavorited: true})
+	// 		this.props.addLifer(this.props.birdObject)
+	// 	} else if (this.state.isFavorited){
+	// 		this.setState({isFavorited: false})
+	// 		this.props.removeLifer(this.props.birdObject.id)
+	// 	}
+	// }
+
+	// changeIcon = (id) => {
+	// 	if (!this.state.isFavorited){
+	// 		 this.props.birdObject.isFavorite = true
+	// 		this.props.addLifer(this.props.birdObject)
+	// 	} else if (this.state.isFavorited){
+	// 		this.props.birdObject.isFavorite = false
+	// 		this.props.removeLifer(this.props.birdObject.id)
+	// 	}
+	// }
+
+
+
+
 	render() {
 		return (
 			<div className='card'>
@@ -49,8 +63,8 @@ class Card extends Component {
 						</div>
 						<img src={this.props.img} alt={this.props.commonName} height='200px'/>
 						<div className='bottom'>
-						{!this.state.isFavorited && <img src={birdOutline} id='icon' onClick={() => this.changeIcon(this.props.id)}/> }
-						{this.state.isFavorited && <img src={colorBird} id='icon' onClick={() => this.changeIcon(this.props.id)}/> }
+						{!this.props.birdObject.isFavorited && <img className= 'icon' src={birdOutline} id={this.props.birdObject.id} onClick={(event) => this.props.changeIcon(event)}/> }
+						{this.props.birdObject.isFavorited && <img src={colorBird} className = 'icon' id={this.props.birdObject.id} onClick={(event) => this.props.changeIcon(event)}/> }
 						<NavLink to={`/learn/${this.props.id}`}>
 							<p className='learn-btn-card'>Learn more</p>
 						</NavLink>
