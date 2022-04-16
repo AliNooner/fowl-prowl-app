@@ -2,7 +2,7 @@ import React from 'react'
 import './Learn.css'
 import AllBirds from '../AllBirds/AllBirds'
 
-const Learn = ({ allBirds, addLifer, removeLifer, changeIcon }) => {
+const Learn = ({ allBirds, changeIcon }) => {
 	return (
 		<section className='learnPage'>
 			<p className='select-bird-p'>Select a bird to learn more</p>
@@ -14,7 +14,7 @@ const Learn = ({ allBirds, addLifer, removeLifer, changeIcon }) => {
 				<option value='Falconidae'>Falcon Family</option>
 			</select>
 
-			<AllBirds allBirds={allBirds} addLifer={addLifer} removeLifer={removeLifer} changeIcon ={changeIcon} />
+			<AllBirds allBirds={allBirds} changeIcon ={changeIcon} />
 		</section>
 	)
 }

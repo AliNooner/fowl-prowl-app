@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../Card/Card';
 import './AllBirds.css';
 
-const AllBirds = ({allBirds, addLifer, removeLifer, changeIcon}) => {
+const AllBirds = ({allBirds, changeIcon}) => {
   const birdCards = allBirds.map((bird) => {
     return (
       <Card
@@ -12,8 +12,6 @@ const AllBirds = ({allBirds, addLifer, removeLifer, changeIcon}) => {
         img={bird.img_url}
         id={bird.id}
         key={bird.id}
-        addLifer={addLifer}
-        removeLifer={removeLifer}
         changeIcon={changeIcon}
       />
     )

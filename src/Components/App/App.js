@@ -38,32 +38,8 @@ class App extends Component {
 	this.setState({botd:this.state.allBirds[index]})
 	}
 
-	addLifer = (newBird) => {
-		this.setState({lifers: [...this.state.lifers, newBird]})
-		console.log('AFTER ADDING', this.state.lifers)
-	}
-
-	removeLifer = (id) => {
-		const filteredBirds = this.state.lifers.filter(bird => bird.id != id)
-		this.setState({lifers: filteredBirds})
-		console.log('AFTER REMOVE', this.state.lifers)
-	}
-
-	// changeIcon = (id) => {
-	// 	if (!this.state.isFavorited){
-	// 		 this.props.birdObject.isFavorite = true
-	// 		this.props.addLifer(this.props.birdObject)
-	// 	} else if (this.state.isFavorited){
-	// 		this.props.birdObject.isFavorite = false
-	// 		this.props.removeLifer(this.props.birdObject.id)
-	// 	}
-	// }
-
 	changeIcon = (event) => {
 		const updatedArray = this.state.allBirds.map(bird => {
-			if (event.target.id == bird.id){
-				console.log('BIRD ID', bird.id)
-			}
 			if (event.target.id == bird.id && !bird.isFavorited) {
 				bird.isFavorited = true
 			} else if (event.target.id == bird.id && bird.isFavorited){
@@ -71,11 +47,8 @@ class App extends Component {
 			}
 			return bird
 		})
-		console.log('Result', updatedArray[0].isFavorited)
 		this.setState({allBirds: updatedArray})
 	}
-
-
 
 	render() {
 		return (
@@ -88,16 +61,15 @@ class App extends Component {
 				<Switch>
 					<Route
 						 exact path='/'
-						render={() => <AllBirds allBirds={this.state.allBirds} addLifer={this.addLifer} removeLifer={this.removeLifer}
-						changeIcon={this.changeIcon}/>}
+						render={() => <AllBirds allBirds={this.state.allBirds} changeIcon={this.changeIcon}/>}
 					/>
 					<Route
 						 exact path='/lifers'
-						render={() => <Lifers lifers={this.state.lifers}/>}
+						render={() => <Lifers lifers={this.state.lifers} allBirds={this.state.allBirds}/>}
 					/>
 					<Route
 						exact path='/learn'
-						render={() => <Learn allBirds={this.state.allBirds} addLifer={this.addLifer} removeLifer={this.removeLifer} changeIcon = {this.changeIcon} />}
+						render={() => <Learn allBirds={this.state.allBirds} changeIcon = {this.changeIcon} />}
 					/>
 				</Switch>
 				<Route
@@ -106,7 +78,7 @@ class App extends Component {
 				/>
 				<Route
 					path='/add-sighting'
-					render={() => <div>Add bird sighting </div>}
+					render={() => <div>Add bird sighting submission form coming soon! </div>}
 				/>
 			</main>
 		)

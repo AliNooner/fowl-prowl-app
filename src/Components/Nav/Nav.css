@@ -30,7 +30,8 @@
 
 .learn-link,
 .home-link,
-.addBird-link {
+.addBird-link,
+.lifers-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,7 +46,8 @@
 
 .learn-link:hover,
 .home-link:hover,
-.addBird-link:hover {
+.addBird-link:hover,
+.lifers-link:hover {
 	transition: 2000ms;
 	transform: translateY(10%);
 	background-color: #cc7178;

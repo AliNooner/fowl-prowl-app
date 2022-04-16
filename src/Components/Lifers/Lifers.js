@@ -2,10 +2,11 @@ import React from 'react';
 import Card from '../Card/Card';
 import './Lifers.css';
 
-const Lifers = ({lifers, addLifer, removeLifer}) => {
-  const birdCards = lifers.map((bird) => {
-    return (
-      <Card
+const Lifers = ({allBirds, lifers, addLifer, removeLifer}) => {
+  const birdCards = allBirds.map((bird) => {
+    if (bird.isFavorited){
+      return (
+        <Card
         birdObject = {bird}
         commonName={bird.common_name}
         scientificName={bird.scientific_name}
@@ -14,8 +15,9 @@ const Lifers = ({lifers, addLifer, removeLifer}) => {
         key={bird.id}
         addLifer={addLifer}
         removeLifer={removeLifer}
-      />
-    )
+        />
+      )  
+    }
   })
 
   return <div className='allBirds-container'>{birdCards}</div>
