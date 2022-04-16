@@ -1,0 +1,21 @@
+.single-bird-container {
+	height: 100%;
+	padding: 5vw;
+	padding-bottom: 30vw;
+}
+
+.name-img-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.bird-sci-name {
+	font-style: italic;
+}
+
+.description {
+	padding: 2em;
+	font-size: 2em;
+	font-weight: lighter;
+}
