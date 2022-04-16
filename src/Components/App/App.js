@@ -13,7 +13,8 @@ class App extends Component {
 		super()
 		this.state = {
 			allBirds: [],
-			botd: {}
+			botd: {},
+			lifers: []
 		}
 	}
 
@@ -29,6 +30,10 @@ class App extends Component {
 	this.setState({botd:this.state.allBirds[index]})
 	}
 
+	addLifer = (newBird) => {
+		this.setState({lifers: [...this.state.lifers, newBird]})
+	}
+
 
 	render() {
 		return (
@@ -40,7 +45,7 @@ class App extends Component {
 				/>
 				<Route
 					 exact path='/'
-					render={() => <AllBirds allBirds={this.state.allBirds} />}
+					render={() => <AllBirds allBirds={this.state.allBirds} addLifer={this.addLifer}/>}
 				/>
 				<Route
 					exact path='/learn'
