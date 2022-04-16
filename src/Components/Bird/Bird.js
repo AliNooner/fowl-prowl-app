@@ -24,6 +24,7 @@ class Bird extends Component {
 				<div className='name-img-container'>
 					<div className='single-name-container'>
 						<h3 className='bird-name'>{this.state.singleBird.common_name}</h3>
+
 						<p className='bird-sci-name'>
 							{this.state.singleBird.scientific_name}
 						</p>

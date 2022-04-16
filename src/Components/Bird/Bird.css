@@ -16,15 +16,17 @@
 }
 .bird-name {
 	font-weight: bolder;
-	font-size: 2em;
+	font-size: 1.5em;
 }
+
 .single-name-container {
 	border: solid #7c7c7c 0.05em;
 	padding: 3em;
 	border-radius: 1em;
 }
+
 .intro {
-	border: solid #7c7c7c 0.05em;
+	border: solid #7c7c7c 0.02em;
 	padding: 0.2em;
 	border-radius: 1em;
 	font-weight: bolder;
