@@ -65,7 +65,7 @@ class App extends Component {
 					/>
 					<Route
 						 exact path='/lifers'
-						render={() => <Lifers lifers={this.state.lifers} allBirds={this.state.allBirds}/>}
+						render={() => <Lifers lifers={this.state.lifers} allBirds={this.state.allBirds} changeIcon = {this.changeIcon}/>}
 					/>
 					<Route
 						exact path='/learn'
@@ -78,7 +78,7 @@ class App extends Component {
 				/>
 				<Route
 					path='/add-sighting'
-					render={() => <div>Add bird sighting submission form coming soon! </div>}
+					render={() => <div> Submission form coming soon! </div>}
 				/>
 			</main>
 		)

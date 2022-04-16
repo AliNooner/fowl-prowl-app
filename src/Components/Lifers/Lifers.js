@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../Card/Card';
 import './Lifers.css';
 
-const Lifers = ({allBirds, lifers, addLifer, removeLifer}) => {
+const Lifers = ({allBirds, changeIcon}) => {
   const birdCards = allBirds.map((bird) => {
     if (bird.isFavorited){
       return (
@@ -13,10 +13,9 @@ const Lifers = ({allBirds, lifers, addLifer, removeLifer}) => {
         img={bird.img_url}
         id={bird.id}
         key={bird.id}
-        addLifer={addLifer}
-        removeLifer={removeLifer}
+        changeIcon={changeIcon}
         />
-      )  
+      )
     }
   })
 
