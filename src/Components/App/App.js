@@ -42,8 +42,11 @@ class App extends Component {
 		const updatedArray = this.state.allBirds.map(bird => {
 			if (event.target.id == bird.id && !bird.isFavorited) {
 				bird.isFavorited = true
+				window.alert(`You added a new bird to your lifers collection! Click the ' Your lifers' button to view.`)
 			} else if (event.target.id == bird.id && bird.isFavorited){
 				bird.isFavorited = false
+				window.alert(`You removed a bird from your lifers collection!`)
+
 			}
 			return bird
 		})
@@ -61,7 +64,11 @@ class App extends Component {
 				<Switch>
 					<Route
 						 exact path='/'
-						render={() => <AllBirds allBirds={this.state.allBirds} changeIcon={this.changeIcon}/>}
+						render={() =>
+							<div>
+							<p className='check-out-tag'>Check out these birds below! Click the bird icon to add a bird to your lifers collection.</p>
+							<AllBirds allBirds={this.state.allBirds} changeIcon={this.changeIcon}/>
+							</div>}
 					/>
 					<Route
 						 exact path='/lifers'
