@@ -38,8 +38,7 @@
 }
 
 .learn-btn:hover {
-	width: 21vw;
-	height: 5.5vw;
+	transform: scale(1.05, 1.05);
 	transition: 1000ms;
 	cursor: pointer;
 }
