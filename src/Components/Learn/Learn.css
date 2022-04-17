@@ -5,3 +5,10 @@
 	text-align: left;
 	color: #cc7178;
 }
+
+.family-title{
+	font-size: 25px;
+	text-align: left;
+	font-weight: bold;
+	padding: 20px;
+}
