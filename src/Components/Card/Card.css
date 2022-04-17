@@ -30,7 +30,9 @@
 .learn-btn-card:hover {
 	color: #cc7178;
 }
-
+#birdCardImg {
+	height: 18vw;
+}
 .icon {
 	height: 3em;
 	-webkit-animation: rotate-vert-center 0.5s
