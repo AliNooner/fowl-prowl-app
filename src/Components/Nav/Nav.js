@@ -16,6 +16,9 @@ const Nav = () => {
 				<NavLink to='/learn'>
 					<p className='learn-link'>Learn</p>
 				</NavLink>
+				<NavLink to='/lifers'>
+				<p className='lifers-link'>Your Lifers</p>
+				</NavLink>
 				<NavLink to='/add-sighting'>
 					<p className='addBird-link'>Add Sighting</p>
 				</NavLink>
