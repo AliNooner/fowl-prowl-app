@@ -1,5 +1,5 @@
 .navigation {
-	height: 10vw;
+	height: 14vw;
 	background-color: #454545;
 	padding: 1em;
 	display: flex;
@@ -51,4 +51,8 @@
 	background-color: #cc7178;
 	color: #454545;
 	border-color: #cc7178;
+}
+
+#logo {
+	height: 15vw;
 }

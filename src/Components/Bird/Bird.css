@@ -39,5 +39,13 @@
 }
 
 #birdImg {
+	transition: 500ms;
 	border-radius: 1em;
+	box-shadow: 1.2px 2.4px 2.4px hsl(0deg 0% 0% / 0.46);
+}
+
+#birdImg:hover {
+	box-shadow: 7px 14.1px 14.1px hsl(0deg 0% 0% / 0.28);
+	transform: scale(3em);
+	transition: 2000ms;
 }
