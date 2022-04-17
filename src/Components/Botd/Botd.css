@@ -1,44 +1,44 @@
 .botd {
-  height: 50vw;
-  background-repeat: no-repeat;
-  background-size:cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	height: 50vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .name-div {
-  background-color: none;
-  background-color: #45454555;
-  color:white;
-  text-align: left;
-  padding: 20px;
+	background-color: none;
+	background-color: #4545458c;
+	color: white;
+	text-align: left;
+	padding: 3vw;
 }
 
 .common-name-botd {
-  font-size: 30px;
-  font-weight: bold;
+	font-size: 1.8vw;
+	font-weight: bold;
 }
 
 .scientific-name-botd {
-  font-style: italic;
+	font-style: italic;
 }
 
 .learn-btn {
-  background-color: #45454555;
-  width: 20vw;
-  height: 5vw;
-  border-radius: 10px;
-  border: solid #45454555;
-  margin-left: 76.5vw;
-  margin-bottom: 1vw;
-  transition: 500ms;
-  color: white;
+	background-color: #45454585;
+	width: 20vw;
+	height: 5vw;
+	font-size: 2em;
+	border-radius: 0.5vw;
+	border: solid #45454555;
+	margin-left: 76.5vw;
+	margin-bottom: 1vw;
+	transition: 500ms;
+	color: white;
 }
 
 .learn-btn:hover {
-  width: 22vw;
-  height: 6vw;
-  transition: 1000ms;
-  cursor: pointer;
+	transform: scale(1.05, 1.05);
+	transition: 1000ms;
+	cursor: pointer;
 }

@@ -32,12 +32,29 @@
 	font-weight: bolder;
 }
 
+.intro:hover {
+	background-color: #7c7c7c;
+	color: whitesmoke;
+}
+
 .description {
 	padding: 2em;
 	font-size: 2em;
 	font-weight: lighter;
 }
 
+/* 
+When bird image is hovered, image scales up slightly and the box shadow radius is increased so the image looks 'farther away' from the page and closer to the viewer */
+
 #birdImg {
+	transition: 500ms;
 	border-radius: 1em;
+	box-shadow: 1.2px 2.4px 2.4px hsl(0deg 0% 0% / 0.46);
+}
+
+#birdImg:hover {
+	box-shadow: 7px 14.1px 14.1px hsl(0deg 0% 0% / 0.28);
+	transform: scale(3em);
+	transition: 2000ms;
+	transform: scale(1.01, 1.01);
 }
