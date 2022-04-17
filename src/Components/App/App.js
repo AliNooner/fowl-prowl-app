@@ -16,7 +16,8 @@ class App extends Component {
 		this.state = {
 			allBirds: [],
 			botd: {},
-			lifers: [],
+			hasLifers: false,
+			counter: 0,
 		}
 	}
 
@@ -43,8 +44,14 @@ class App extends Component {
 		const updatedArray = this.state.allBirds.map((bird) => {
 			if (event.target.id == bird.id && !bird.isFavorited) {
 				bird.isFavorited = true
-			} else if (event.target.id == bird.id && bird.isFavorited) {
+				this.state.hasLifers = true
+				this.state.counter++
+			} else if (event.target.id == bird.id && bird.isFavorited){
 				bird.isFavorited = false
+				this.state.counter = this.state.counter - 1
+			}
+			if (this.state.counter === 0){
+				this.state.hasLifers = false;
 			}
 			return bird
 		})
@@ -62,6 +69,16 @@ class App extends Component {
 				/>
 				<Switch>
 					<Route
+						 exact path='/'
+						render={() =>
+							<div>
+							<p className='check-out-tag'>Check these birds out! Click the bird icon to add a bird to your lifers collection.</p>
+							<AllBirds allBirds={this.state.allBirds} changeIcon={this.changeIcon}/>
+							</div>}
+					/>
+					<Route
+						 exact path='/lifers'
+						render={() => <Lifers lifers={this.state.lifers} allBirds={this.state.allBirds} changeIcon = {this.changeIcon} hasLifers= {this.state.hasLifers}/>}
 						exact
 						path='/'
 						render={() => (
@@ -71,16 +88,7 @@ class App extends Component {
 							/>
 						)}
 					/>
-					<Route
-						exact
-						path='/lifers'
-						render={() => (
-							<Lifers
-								lifers={this.state.lifers}
-								allBirds={this.state.allBirds}
-								changeIcon={this.changeIcon}
-							/>
-						)}
+			
 					/>
 					<Route
 						exact

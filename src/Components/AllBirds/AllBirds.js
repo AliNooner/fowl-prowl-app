@@ -17,7 +17,9 @@ const AllBirds = ({allBirds, changeIcon}) => {
     )
   })
 
-  return <div className='allBirds-container'>{birdCards}</div>
+  return (
+      <div className='allBirds-container'>{birdCards}</div>
+  )
 }
 
 
