@@ -32,7 +32,9 @@
 }
 #birdCardImg {
 	height: 18vw;
+	border-radius: 0.5em;
 }
+
 .icon {
 	height: 3em;
 	-webkit-animation: rotate-vert-center 0.5s
