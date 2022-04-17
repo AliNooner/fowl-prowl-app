@@ -13,9 +13,12 @@
 }
 
 .title {
-	font-size: 2.2em;
+	font-size: 2.5em;
 }
-
+h4 {
+	/* color: #cc7178; */
+	font-size: 1.22em;
+}
 .nav-buttons {
 	border-radius: 0.5em;
 	height: 8em;
