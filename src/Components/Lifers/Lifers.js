@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../Card/Card';
 import './Lifers.css';
 
-const Lifers = ({allBirds, changeIcon}) => {
+const Lifers = ({allBirds, changeIcon, hasLifers}) => {
   const birdCards = allBirds.map((bird) => {
     if (bird.isFavorited){
       return (
@@ -22,11 +22,11 @@ const Lifers = ({allBirds, changeIcon}) => {
   console.log('TESTTTT', newCards)
 
   return (
-  <div className='allBirds-container'>{newCards}</div>
+    <div>
+      {!newCards.length && <p>You have no lifers.</p>}
+      <div className='allBirds-container'>{newCards}</div>
+    </div>
   )
 }
-
-//Test to see if this branch can be merged into main. 
-
 
 export default Lifers;

@@ -15,7 +15,8 @@ class App extends Component {
 		this.state = {
 			allBirds: [],
 			botd: {},
-			lifers: []
+			hasLifers: false,
+			counter: 0,
 		}
 	}
 
@@ -42,11 +43,14 @@ class App extends Component {
 		const updatedArray = this.state.allBirds.map(bird => {
 			if (event.target.id == bird.id && !bird.isFavorited) {
 				bird.isFavorited = true
-				window.alert(`You added a new bird to your lifers collection! Click the ' Your lifers' button to view.`)
+				this.state.hasLifers = true
+				this.state.counter++
 			} else if (event.target.id == bird.id && bird.isFavorited){
 				bird.isFavorited = false
-				window.alert(`You removed a bird from your lifers collection!`)
-
+				this.state.counter = this.state.counter - 1
+			}
+			if (this.state.counter === 0){
+				this.state.hasLifers = false;
 			}
 			return bird
 		})
@@ -72,7 +76,7 @@ class App extends Component {
 					/>
 					<Route
 						 exact path='/lifers'
-						render={() => <Lifers lifers={this.state.lifers} allBirds={this.state.allBirds} changeIcon = {this.changeIcon}/>}
+						render={() => <Lifers lifers={this.state.lifers} allBirds={this.state.allBirds} changeIcon = {this.changeIcon} hasLifers= {this.state.hasLifers}/>}
 					/>
 					<Route
 						exact path='/learn'
