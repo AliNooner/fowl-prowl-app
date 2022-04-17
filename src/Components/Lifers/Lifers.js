@@ -18,13 +18,15 @@ const Lifers = ({allBirds, changeIcon}) => {
       )
     }
   })
+  const newCards = birdCards.filter(bird => bird != undefined)
+  console.log('TESTTTT', newCards)
 
   return (
-  <div className='allBirds-container'>{birdCards}</div>
+  <div className='allBirds-container'>{newCards}</div>
   )
 }
 
-
+//Test to see if this branch can be merged into main. 
 
 
 export default Lifers;

@@ -66,7 +66,7 @@ class App extends Component {
 						 exact path='/'
 						render={() =>
 							<div>
-							<p className='check-out-tag'>Check out these birds below! Click the bird icon to add a bird to your lifers collection.</p>
+							<p className='check-out-tag'>Check these birds out! Click the bird icon to add a bird to your lifers collection.</p>
 							<AllBirds allBirds={this.state.allBirds} changeIcon={this.changeIcon}/>
 							</div>}
 					/>
