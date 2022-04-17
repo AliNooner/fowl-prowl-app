@@ -30,10 +30,13 @@
 .learn-btn-card:hover {
 	color: #cc7178;
 }
+
 #birdCardImg {
 	height: 18vw;
 	border-radius: 0.5em;
 }
+
+/* icon spins when changed */
 
 .icon {
 	height: 3em;
@@ -47,6 +50,9 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+/* -------- Animation -------- */
+
 @-webkit-keyframes rotate-vert-center {
 	0% {
 		-webkit-transform: rotateY(0);

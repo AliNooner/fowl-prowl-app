@@ -43,6 +43,9 @@
 	font-weight: lighter;
 }
 
+/* 
+When bird image is hovered, image scales up slightly and the box shadow radius is increased so the image looks 'farther away' from the page and closer to the viewer */
+
 #birdImg {
 	transition: 500ms;
 	border-radius: 1em;
