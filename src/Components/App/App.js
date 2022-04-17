@@ -8,6 +8,7 @@ import Botd from '../Botd/Botd'
 import Learn from '../Learn/Learn'
 import Bird from '../Bird/Bird'
 import Lifers from '../Lifers/Lifers'
+import logo from '../../images/prowl.png'
 
 class App extends Component {
 	constructor() {
@@ -23,24 +24,24 @@ class App extends Component {
 	componentDidMount = () => {
 		fetchCalls
 			.fetchData('allBirds')
-			.then(data => {
-			const newArray = data.map(bird => {
-				bird.isFavorited = false
-				bird.key = bird.id
-				return bird
-			})
-			this.setState({allBirds: newArray})
+			.then((data) => {
+				const newArray = data.map((bird) => {
+					bird.isFavorited = false
+					bird.key = bird.id
+					return bird
+				})
+				this.setState({ allBirds: newArray })
 			})
 			.then(() => this.getRandomBird(this.state.allBirds))
 	}
 
 	getRandomBird = (array) => {
-  const index = Math.floor(Math.random() * array.length)
-	this.setState({botd:this.state.allBirds[index]})
+		const index = Math.floor(Math.random() * array.length)
+		this.setState({ botd: this.state.allBirds[index] })
 	}
 
 	changeIcon = (event) => {
-		const updatedArray = this.state.allBirds.map(bird => {
+		const updatedArray = this.state.allBirds.map((bird) => {
 			if (event.target.id == bird.id && !bird.isFavorited) {
 				bird.isFavorited = true
 				this.state.hasLifers = true
@@ -54,7 +55,7 @@ class App extends Component {
 			}
 			return bird
 		})
-		this.setState({allBirds: updatedArray})
+		this.setState({ allBirds: updatedArray })
 	}
 
 	render() {
@@ -62,8 +63,9 @@ class App extends Component {
 			<main className='App'>
 				<Nav />
 				<Route
-				 	exact path='/'
-					render={() => <Botd randomBird={this.state.botd}/>}
+					exact
+					path='/'
+					render={() => <Botd randomBird={this.state.botd} />}
 				/>
 				<Switch>
 					<Route
@@ -77,20 +79,39 @@ class App extends Component {
 					<Route
 						 exact path='/lifers'
 						render={() => <Lifers lifers={this.state.lifers} allBirds={this.state.allBirds} changeIcon = {this.changeIcon} hasLifers= {this.state.hasLifers}/>}
+						exact
+						path='/'
+						render={() => (
+							<AllBirds
+								allBirds={this.state.allBirds}
+								changeIcon={this.changeIcon}
+							/>
+						)}
+					/>
+			
 					/>
 					<Route
-						exact path='/learn'
-						render={() => <Learn allBirds={this.state.allBirds} changeIcon = {this.changeIcon} />}
+						exact
+						path='/learn'
+						render={() => (
+							<Learn
+								allBirds={this.state.allBirds}
+								changeIcon={this.changeIcon}
+							/>
+						)}
 					/>
 				</Switch>
 				<Route
 					path='/learn/:id'
-					render={({match}) => <Bird id={match.params.id}/>}
+					render={({ match }) => <Bird id={match.params.id} />}
 				/>
 				<Route
 					path='/add-sighting'
 					render={() => <div> Submission form coming soon! </div>}
 				/>
+				<footer>
+					<img src={logo} alt='Fowl Prowl Logo' id='logo' />
+				</footer>
 			</main>
 		)
 	}

@@ -1,6 +1,7 @@
-import React from 'react';
-import Card from '../Card/Card';
-import './Lifers.css';
+import React from 'react'
+import Card from '../Card/Card'
+import './Lifers.css'
+
 
 const Lifers = ({allBirds, changeIcon, hasLifers}) => {
   const birdCards = allBirds.map((bird) => {
@@ -30,3 +31,4 @@ const Lifers = ({allBirds, changeIcon, hasLifers}) => {
 }
 
 export default Lifers;
+
