@@ -37,7 +37,7 @@ Main Page: User-friendly navigation
 
 ![Nav bar view](https://media3.giphy.com/media/bVyM8oVcl3QHoPjlRn/giphy.gif)
 
-Learn Page: All birds are listed and sorted by family. Click on a bird to learn more!
+Learn Page: All birds are listed and sorted by family. Click on "Learn more" for bird details!
 
 ![Learn page organized by family](https://media1.giphy.com/media/vGHODBxjzqdCeoOsWU/giphy.gif)
 
