@@ -114,7 +114,7 @@ class App extends Component {
 				/>
 				<Route
 				render={() => (
-					<div className='no-match'>Sorry, the URL/page you requested was not found.</div>)}
+					<div className='no-match'>404 Error: Sorry, the URL/page you requested was not found.</div>)}
 					/>
 					</Switch>
 				<footer>

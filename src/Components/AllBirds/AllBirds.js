@@ -7,10 +7,7 @@ const AllBirds = ({allBirds, changeIcon}) => {
     return (
       <Card
         birdObject = {bird}
-        commonName={bird.common_name}
-        scientificName={bird.scientific_name}
-        img={bird.img_url}
-        id={bird.id}
+        // id={bird.id}
         key={bird.id}
         changeIcon={changeIcon}
       />

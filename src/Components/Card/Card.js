@@ -5,20 +5,16 @@ import colorBird from '../../images/bird_color.png'
 import birdOutline from '../../images/bird_outline.png'
 
 const Card = ({
-	commonName,
-	scientificName,
-	img,
-	id,
 	changeIcon,
 	birdObject,
 }) => {
 	return (
 		<div className='card'>
 			<div className='name-container'>
-				<p className=' style common-name'>{commonName}</p>
-				<p className='style sci-name'>{scientificName}</p>
+				<p className=' style common-name'>{birdObject.common_name}</p>
+				<p className='style sci-name'>{birdObject.scientific_name}</p>
 			</div>
-			<img src={img} alt={commonName} className='bird-image' id='birdCardImg' />
+			<img src={birdObject.img_url} alt={birdObject.common_name} className='bird-image' id='birdCardImg' />
 			<div className='bottom'>
 				{!birdObject.isFavorited && (
 					<img
@@ -36,7 +32,7 @@ const Card = ({
 						onClick={(event) => changeIcon(event)}
 					/>
 				)}
-				<NavLink to={`/learn/${id}`}>
+				<NavLink to={`/learn/${birdObject.id}`}>
 					<p className='learn-btn-card'>Learn more</p>
 				</NavLink>
 			</div>
