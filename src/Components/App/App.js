@@ -104,19 +104,19 @@ class App extends Component {
 							/>
 						)}
 					/>
-					<Route
-					render={() => (
-						<div className='no=match'>Sorry, the URL/page you requested was not found.</div>)}
-					/>
-				</Switch>
 				<Route
 					path='/learn/:id'
 					render={({ match }) => <Bird id={match.params.id} />}
 				/>
 				<Route
-					path='/add-sighting'
-					render={() => <div> Submission form coming soon! </div>}
+					exact path='/add-sighting'
+					render={() => <div className= 'coming-soon'> Submission form coming soon! </div>}
 				/>
+				<Route
+				render={() => (
+					<div className='no-match'>Sorry, the URL/page you requested was not found.</div>)}
+					/>
+					</Switch>
 				<footer>
 					<img src={logo} alt='Fowl Prowl Logo' id='logo' />
 				</footer>
