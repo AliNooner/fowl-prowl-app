@@ -1,13 +1,3 @@
-<!-- ## Fowl Prowl App
-
-### Color Palette
-
-Lightest: "Isabelline": #f9f5f0,
-Mid: "Linen": #f7ede2,
-Dark: "Onyx": #454545,
-color-pop: "Fuzzy Wuzzy": #cc7178,
-Mid-dark: "light onyx": #7c7c7c -->
-
 # Fowl Prowl
 
 ## Table of Contents
@@ -24,7 +14,7 @@ Mid-dark: "light onyx": #7c7c7c -->
 
 ## Introduction
 
-Fowl Prowl is a modern birding app that allows users to view multiple species of birds, catch the bird of the day and add favorite birds to their Lifers list! This project was given as a challenge to stretch our knowledge and self-teach a new technology we are interested in. We chose to study backend technologies and created an entire database and API. All of the data connected to this application was built by our team from the ground up.
+Fowl Prowl is a modern birding app that allows users to view multiple species of birds, get to know a featured "Bird of the Day" and add their favorite birds to their Lifers list! This project was given to us as a challenge to stretch our knowledge and self-teach a new technology we're interested in. We chose to study backend technologies and created an entire database and API, which has been deployed to Heroku for easier access. All of the data connected to this application was built by our team from the ground up.
 
 
 ## Technologies
@@ -43,23 +33,23 @@ Fowl Prowl is a modern birding app that allows users to view multiple species of
   - [Ali Nooner](https://github.com/alinooner)
 
 ## Illustrations
-User-friendly navigation
+Main Page: User-friendly navigation
 
 ![Nav bar view](https://media3.giphy.com/media/bVyM8oVcl3QHoPjlRn/giphy.gif)
 
-All birds are listed and sorted by family. Click on a bird to learn more!
+Learn Page: All birds are listed and sorted by family. Click on a bird to learn more!
 
 ![Learn page organized by family](https://media1.giphy.com/media/vGHODBxjzqdCeoOsWU/giphy.gif)
 
-Learn more about an individual bird
+Single Bird Page: Learn more about an individual bird
 
 ![Single bird page view](https://media4.giphy.com/media/n4IGTZEX6dXwXu9JLQ/giphy.gif)
 
-Ability to favorite a bird and add to your Lifers List
+Add a Lifer by clicking the bird icon:
 
 ![Adding a lifer](https://media4.giphy.com/media/RlvcWDys5QKbqmCokf/giphy.gif)
 
-View your Lifers page
+Lifers page: A list of your favorited birds
 
 ![Lifers view](https://media4.giphy.com/media/0Vd4csmLuxUR4IvMXf/giphy.gif)
 
