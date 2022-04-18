@@ -97,6 +97,7 @@ describe('Fowl Prowl Learn-page', () => {
 			.url()
 			.should('include', '/learn/3')
 	})
+
 	it('Should be able to click the Home button to go back home', () => {
 		cy.get('.home-link').click().get('.App').should('be.visible')
 	})
