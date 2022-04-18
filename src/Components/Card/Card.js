@@ -18,11 +18,11 @@ const Card = ({
 				<p className=' style common-name'>{commonName}</p>
 				<p className='style sci-name'>{scientificName}</p>
 			</div>
-			<img src={img} alt={commonName} id='birdCardImg' />
+			<img src={img} alt={commonName} className='bird-image' id='birdCardImg' />
 			<div className='bottom'>
 				{!birdObject.isFavorited && (
 					<img
-						className='icon outline'
+						className='icon outline-bird'
 						src={birdOutline}
 						id={birdObject.id}
 						onClick={(event) => changeIcon(event)}
@@ -31,7 +31,7 @@ const Card = ({
 				{birdObject.isFavorited && (
 					<img
 						src={colorBird}
-						className='icon color'
+						className='icon color-bird'
 						id={birdObject.id}
 						onClick={(event) => changeIcon(event)}
 					/>

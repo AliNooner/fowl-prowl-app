@@ -44,11 +44,10 @@ class App extends Component {
 		const updatedArray = this.state.allBirds.map((bird) => {
 			if (event.target.id == bird.id && !bird.isFavorited) {
 				bird.isFavorited = true
-				this.state.hasLifers = true
-				this.state.counter++
+				this.setState({hasLifers: true, counter: this.state.counter++})
 			} else if (event.target.id == bird.id && bird.isFavorited) {
 				bird.isFavorited = false
-				this.state.counter = this.state.counter - 1
+				this.setState({counter: this.state.counter - 1})
 			}
 			if (this.state.counter === 0) {
 				this.state.hasLifers = false

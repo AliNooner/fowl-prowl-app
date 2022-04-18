@@ -31,3 +31,4 @@ const Lifers = ({ allBirds, changeIcon, hasLifers }) => {
 }
 
 export default Lifers
+
