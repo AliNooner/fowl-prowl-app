@@ -4,10 +4,8 @@ import { Route, NavLink } from 'react-router-dom'
 import colorBird from '../../images/bird_color.png'
 import birdOutline from '../../images/bird_outline.png'
 
-const Card = ({
-	changeIcon,
-	birdObject,
-}) => {
+const Card = ({changeIcon, birdObject,}) => {
+
 	return (
 		<div className='card'>
 			<div className='name-container'>

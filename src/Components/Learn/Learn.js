@@ -3,6 +3,7 @@ import './Learn.css'
 import AllBirds from '../AllBirds/AllBirds'
 
 const Learn = ({ allBirds, changeIcon }) => {
+
 	const titFamily = allBirds.filter((bird) => bird.family === 'Paridae')
 	const bopFamily = allBirds.filter((bird) => bird.family === 'Bop')
 	const falconFamily = allBirds.filter((bird) => bird.family === 'Falconidae')
