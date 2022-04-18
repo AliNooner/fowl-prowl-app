@@ -22,7 +22,7 @@ const Card = ({
 			<div className='bottom'>
 				{!birdObject.isFavorited && (
 					<img
-						className='icon'
+						className='icon outline'
 						src={birdOutline}
 						id={birdObject.id}
 						onClick={(event) => changeIcon(event)}
@@ -31,7 +31,7 @@ const Card = ({
 				{birdObject.isFavorited && (
 					<img
 						src={colorBird}
-						className='icon'
+						className='icon color'
 						id={birdObject.id}
 						onClick={(event) => changeIcon(event)}
 					/>
