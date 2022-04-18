@@ -56,14 +56,13 @@ Visit our deployed [Fowl Prowl App](
   )
 
 ## Wins
-  - Keeping good pacing throughout the project - meeting expectations on deadlines
   - Self-teaching efficiently with new concepts
+  - Keeping good pacing throughout the project - meeting expectations on deadlines
   - Thorough testing using Cypress
   - Using data down, actions up principles to enact a search feature
   - Close attention to User Experience - reflected in the routing and multiple ways to easily return to the main page
 
 ## Challenges & Improvements
-  - Deciding whether components should be functional or class components
   - Troubleshooting async issues
   - Possible future improvements:
     - Allow a user to add a bird sighting
