@@ -14,7 +14,7 @@
 
 ## Introduction
 
-Fowl Prowl is a modern birding app that allows users to view multiple species of birds, get to know a featured "Bird of the Day" and add their favorite birds to their Lifers list! This project was given to us as a challenge to stretch our knowledge and self-teach a new technology we're interested in. We chose to study backend technologies and created an entire database and API, which has been deployed to Heroku for easier access. All of the data connected to this application was built by our team from the ground up.
+Fowl Prowl is a modern birding app that allows users to view multiple species of birds, get to know a featured "Bird of the Day" and add their favorite birds to their Lifers list! This project was given to us as a challenge to stretch our knowledge and self-teach a new technology we're interested in. We chose to study backend technologies and create an entire database and API, which has been deployed to Heroku for easier access. All of the data connected to this application was built by our team from the ground up.
 
 
 ## Technologies
