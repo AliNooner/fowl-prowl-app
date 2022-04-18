@@ -43,11 +43,29 @@ Fowl Prowl is a modern birding app that allows users to view multiple species of
   - [Ali Nooner](https://github.com/alinooner)
 
 ## Illustrations
+User-friendly navigation
 
-Full Screen App:  
+![Nav bar view](https://media3.giphy.com/media/bVyM8oVcl3QHoPjlRn/giphy.gif)
 
+All birds are listed and sorted by family. Click on a bird to learn more!
 
-IPhone view for responsive design:  
+![Learn page organized by family](https://media1.giphy.com/media/vGHODBxjzqdCeoOsWU/giphy.gif)
+
+Learn more about an individual bird
+
+![Single bird page view](https://media4.giphy.com/media/n4IGTZEX6dXwXu9JLQ/giphy.gif)
+
+Ability to favorite a bird and add to your Lifers List
+
+![Adding a lifer](https://media4.giphy.com/media/RlvcWDys5QKbqmCokf/giphy.gif)
+
+View your Lifers page
+
+![Lifers view](https://media4.giphy.com/media/0Vd4csmLuxUR4IvMXf/giphy.gif)
+
+<!-- All birds are listed and sorted by family - Click on a bird to learn more
+
+![Learn page view](https://media2.giphy.com/media/tKrtJybQbp6dcXNIGq/giphy.gif) -->
 
 
 ## Deployed Page
