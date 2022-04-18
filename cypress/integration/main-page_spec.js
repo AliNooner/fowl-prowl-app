@@ -76,6 +76,14 @@ cy.get('.learn-link').click()
 it('Should be directed to the learn page when user clicks the Add sighting button', () => {
 cy.get('.addBird-link').click()
   .url().should('include', '/add-sighting')
+})
 
+it('Should allow the user to use the back and forward buttons to go to a page in the viewer history', () => {
+    cy.get('.learn-link').click()
+    .get('.lifers-link').click()
+    .go('back')
+    .location('pathname').should('include', '/learn')
+    .go('forward')
+    .location('pathname').should('not.include', '/learn')
 })
 })
