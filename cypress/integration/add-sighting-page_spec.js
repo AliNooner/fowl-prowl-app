@@ -1,4 +1,9 @@
 describe('Add Sighting Page', () => {
+
+// beforeEach(() => {
+//   cy.visit('http://localhost:3000/add-sighting')
+// });
+
   it('Should display a coming soon message', () => {
     cy.visit('http://localhost:3000/add-sighting')
     .contains('Submission form coming soon!')
@@ -16,5 +21,10 @@ describe('Add Sighting Page', () => {
       .get('.addBird-link')
       .contains('Add Sighting')
   });
+
+  // it('Should render a footer with the Fowl Prowl logo', () => {
+  //   cy.visit('http://localhost:3000/add-sighting')
+  //   .get('footer').contains('.icon')
+  // })
 
 });
