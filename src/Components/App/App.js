@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, NavLink, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import './App.css'
 import fetchCalls from '../../ApiCalls'
 import AllBirds from '../AllBirds/AllBirds'
@@ -42,19 +42,19 @@ class App extends Component {
 
 	changeIcon = (event) => {
 		const updatedArray = this.state.allBirds.map((bird) => {
-			if (event.target.id == bird.id && !bird.isFavorited) {
+			if (parseInt(event.target.id) === bird.id && !bird.isFavorited) {
 				bird.isFavorited = true
-				this.setState({hasLifers: true, counter: this.state.counter++})
-			} else if (event.target.id == bird.id && bird.isFavorited) {
+				this.setState({hasLifers: true, counter: this.state.counter + 1})
+			} else if (parseInt(event.target.id) === bird.id && bird.isFavorited) {
 				bird.isFavorited = false
 				this.setState({counter: this.state.counter - 1})
 			}
 			if (this.state.counter === 0) {
-				this.state.hasLifers = false
+				this.setState({hasLifers: false})
 			}
 			return bird
 		})
-		this.setState({ allBirds: updatedArray })
+		this.setState({ allBirds: updatedArray})
 	}
 
 	render() {
@@ -104,15 +104,19 @@ class App extends Component {
 							/>
 						)}
 					/>
-				</Switch>
 				<Route
 					path='/learn/:id'
 					render={({ match }) => <Bird id={match.params.id} />}
 				/>
 				<Route
-					path='/add-sighting'
-					render={() => <div> Submission form coming soon! </div>}
+					exact path='/add-sighting'
+					render={() => <div className= 'coming-soon'> Submission form coming soon! </div>}
 				/>
+				<Route
+				render={() => (
+					<div className='no-match'>404 Error: Sorry, the URL/page you requested was not found.</div>)}
+					/>
+					</Switch>
 				<footer>
 					<img src={logo} alt='Fowl Prowl Logo' id='logo' />
 				</footer>
