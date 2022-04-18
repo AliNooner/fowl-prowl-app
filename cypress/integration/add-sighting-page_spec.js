@@ -1,13 +1,9 @@
 describe('Add Sighting Page', () => {
 
-// beforeEach(() => {
-//   cy.visit('http://localhost:3000/add-sighting')
-// });
-
   it('Should display a coming soon message', () => {
     cy.visit('http://localhost:3000/add-sighting')
     .contains('Submission form coming soon!')
-  });
+  })
 
   it('Should be able to visit http://localhost:3000/add-sighting and render a navgivation bar with the title and nav buttons', () => {
     cy.visit('http://localhost:3000/add-sighting')
@@ -20,11 +16,11 @@ describe('Add Sighting Page', () => {
       .contains('Your Lifers')
       .get('.addBird-link')
       .contains('Add Sighting')
-  });
+  })
 
-  // it('Should render a footer with the Fowl Prowl logo', () => {
-  //   cy.visit('http://localhost:3000/add-sighting')
-  //   .get('footer').contains('.logo')
-  // })
-
-});
+  it('Should render a footer with the Fowl Prowl logo', () => {
+    cy.visit('http://localhost:3000/add-sighting')
+    .get('footer').should('be.visible')
+    .get('#logo').should('be.visible')
+  })
+})
