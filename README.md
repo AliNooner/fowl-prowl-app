@@ -3,8 +3,8 @@
 ## Table of Contents
 
   - [Introduction](#Introduction)
-  - [Technologies](#Technologies)
   - [Contributors](#Contributors)
+  - [Technologies](#Technologies)
   - [Illustrations](#Illustrations)
   - [Deployed Page](#Deployed-Page)
   - [Set Up](#Set-Up)
@@ -18,6 +18,15 @@
 Fowl Prowl is a modern birding app that allows users to view multiple species of birds, get to know a featured "Bird of the Day" and add their favorite birds to their Lifers list! This project was given to us as a challenge to stretch our knowledge and self-teach a new technology we're interested in. We chose to study backend technologies and create an entire database and API, which has been deployed to Heroku for easier access. All of the data connected to this application was built by our team from the ground up.
 
 
+## Contributors
+
+- [Ali Nooner](https://github.com/AliNooner)
+- [Katie Toler](https://github.com/KATIETOLER)
+- [Nicole Valentini](https://github.com/nvalentini21)
+
+
+- PM [Scott Ertmer](https://github.com/sertmer)
+
 ## Technologies
   - React
   - Router
@@ -29,11 +38,6 @@ Fowl Prowl is a modern birding app that allows users to view multiple species of
   - Joi
   - JavaScript
   - CSS
-
-## Contributors
-  - [Nicole Valentini](https://github.com/nvalentini21)
-  - [Katie Toler](https://github.com/KATIETOLER)
-  - [Ali Nooner](https://github.com/alinooner)
 
 ## Illustrations
 Main Page: User-friendly navigation
@@ -93,6 +97,9 @@ To run this app locally:
 ## Sources
   - [MDN](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction)
   - [W3Schools](https://www.w3schools.com/)
+  - Bird Icon by [FreePik](https://www.flaticon.com/free-icons/bird)
+
 
 ## Project Specs
   - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-3/stretch.html)
+
