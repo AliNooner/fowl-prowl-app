@@ -12,6 +12,12 @@
 	color: #cc7178;
 }
 
+.coming-soon, .no-match{
+	height: 100vw;
+	color:  #cc7178;
+	font-size: 20px;
+}
+
 a:link {
 	color: #454545;
 	text-decoration: none;
@@ -32,4 +38,8 @@ h4 {
 footer {
 	padding: 1em;
 	background-color: #434343;
+}
+
+.check-out-tag {
+	padding: 2em;
 }

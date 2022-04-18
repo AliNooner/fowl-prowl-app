@@ -20,7 +20,6 @@ class Bird extends Component {
 	render() {
 		return (
 			<div className='single-bird-container'>
-				{/* <p>{this.state.birdID}</p> */}
 				<div className='name-img-container'>
 					<div className='single-name-container'>
 						<h3 className='bird-name'>{this.state.singleBird.common_name}</h3>
@@ -30,6 +29,7 @@ class Bird extends Component {
 						</p>
 					</div>
 					<img
+						className = "bird-image"
 						src={this.state.singleBird.img_url}
 						alt={this.state.singleBird.common_name}
 						width='700vw'
@@ -38,24 +38,24 @@ class Bird extends Component {
 						id='birdImg'
 					/>
 				</div>
-				<p className='description'>
+				<div className='description description-block'>
 					<p className='intro'>Description: </p>
 					<br></br>
 					{this.state.singleBird.description}
-				</p>
+				</div>
 				{this.state.singleBird.habitat && (
-					<p className='description'>
-						<p className='intro'>Habitat: </p>
+					<div className='description habitat-block'>
+					<p className='intro'>Habitat: </p>
 						<br></br>
 						{this.state.singleBird.habitat}
-					</p>
+					</div>
 				)}
 				{this.state.singleBird.fun_fact && (
-					<p className='description'>
+					<div className='description fact-block'>
 						<p className='intro'>Fun Fact: </p>
 						<br></br>
 						{this.state.singleBird.fun_fact}
-					</p>
+					</div>
 				)}
 			</div>
 		)

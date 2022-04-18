@@ -2,7 +2,6 @@ import React, { Component} from 'react';
 import './Botd.css';
 import { Route, NavLink } from 'react-router-dom'
 
-
 const Botd = ({randomBird}) => {
 
   return(

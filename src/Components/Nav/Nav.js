@@ -4,10 +4,10 @@ import { Route, NavLink } from 'react-router-dom'
 import logo from '../../images/prowl.png'
 
 const Nav = () => {
+	
 	return (
 		<nav className='navigation'>
 			<div className='title-div'>
-				{/* <img id='logo' src={logo} alt='Fowl Prowl: A Modern Birding App' /> */}
 				<h1 className='title'>Fowl Prowl</h1>
 				<h4>A Modern Birding App</h4>
 			</div>
