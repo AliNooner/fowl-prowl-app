@@ -20,10 +20,9 @@ const Lifers = ({allBirds, changeIcon, hasLifers}) => {
     }
   })
   const newCards = birdCards.filter(bird => bird != undefined)
-  console.log('TESTTTT', newCards)
-
+  
   return (
-    <div>
+    <div className = 'no-lifers'>
       {!newCards.length && <p>You have no lifers.</p>}
       <div className='allBirds-container'>{newCards}</div>
     </div>
@@ -31,4 +30,3 @@ const Lifers = ({allBirds, changeIcon, hasLifers}) => {
 }
 
 export default Lifers;
-
