@@ -24,7 +24,7 @@ describe('Add Sighting Page', () => {
 
   // it('Should render a footer with the Fowl Prowl logo', () => {
   //   cy.visit('http://localhost:3000/add-sighting')
-  //   .get('footer').contains('.icon')
+  //   .get('footer').contains('.logo')
   // })
 
 });
