@@ -7,6 +7,7 @@
   - [Contributors](#Contributors)
   - [Illustrations](#Illustrations)
   - [Deployed Page](#Deployed-Page)
+  - [Set Up](#Set-Up)
   - [Wins](#Wins)
   - [Challenges & Improvements](#Challenges-&-Improvements)
   - [Sources](#Sources)
@@ -25,6 +26,8 @@ Fowl Prowl is a modern birding app that allows users to view multiple species of
   - Postico
   - Knex
   - Cypress
+  - Joi
+  - JavaScript
   - CSS
 
 ## Contributors
@@ -53,27 +56,38 @@ Lifers page: A list of your favorited birds
 
 ![Lifers view](https://media4.giphy.com/media/0Vd4csmLuxUR4IvMXf/giphy.gif)
 
-<!-- All birds are listed and sorted by family - Click on a bird to learn more
-
-![Learn page view](https://media2.giphy.com/media/tKrtJybQbp6dcXNIGq/giphy.gif) -->
-
 
 ## Deployed Page
 
 Visit our deployed [Fowl Prowl App](
   )
 
+Visit our deployed [Fowl Prowl API]('https://fowl-prowl-api.herokuapp.com/api/v1/allBirds') and the corresponding [repo]('https://github.com/KATIETOLER/fowl-prowl-api')
+
+## Set Up
+To run this app locally:
+
+- Fork this repository
+- Run `git clone` git@github.com:AliNooner/fowl-prowl-app.git in your command line
+- Run `cd fowl-prowl-app` to navigate into the repository
+- Run `npm install`
+- Run `npm start`
+- Visit http://localhost:3000/ in your browser to view the Fowl Prowl app!
+-Open a second terminal tab and run `npm run cypress` (while localhost:3000 is still running) to access the cypress testing for this app
+
 ## Wins
   - Self-teaching efficiently with new concepts
   - Keeping good pacing throughout the project - meeting expectations on deadlines
+  - Deploying data to Heroku
   - Thorough testing using Cypress
-  - Using data down, actions up principles to enact a search feature
+  - Using data down, actions up principles to favorite a bird
   - Close attention to User Experience - reflected in the routing and multiple ways to easily return to the main page
 
 ## Challenges & Improvements
   - Troubleshooting async issues
   - Possible future improvements:
     - Allow a user to add a bird sighting
+    - Adding Lifers to the Postgres database
     - Add further animations
 
 ## Sources
