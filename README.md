@@ -63,7 +63,7 @@ Lifers page: A list of your favorited birds
 
 ## Deployed Page
 
-Visit our deployed [Fowl Prowl App](https://fowl-prowl-turing.surge.sh/lifers)
+Visit our deployed [Fowl Prowl App](https://fowl-prowl-turing.surge.sh)
 
 Visit our deployed [Fowl Prowl API](https://fowl-prowl-api.herokuapp.com/api/v1/allBirds) and the corresponding [repo](https://github.com/KATIETOLER/fowl-prowl-api)
 
